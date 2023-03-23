@@ -18,7 +18,8 @@ public class Vehicle {
     public double getTollFee(){
         return tollFee;
     }
-    public double newTollFee(int newVal){
+    public void newTollFee(double newVal){
+        tollFee = newVal;
 
     }
     public int getPassengers(){

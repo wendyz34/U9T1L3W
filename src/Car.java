@@ -32,9 +32,14 @@ public class Car extends Vehicle {
     public void applyDiscount(){
         if((discountApplied==false)&&(electric==true)){
             double tollFee = getTollFee()*0.5;
+            newTollFee(tollFee);
             discountApplied=true;
         }
     }
+    public void setDiscountApplied(boolean newVal){
+        discountApplied=newVal;
+    }
+
 
 
 }
