@@ -10,7 +10,7 @@ public class Vehicle {
     }
 
     public double calculateTollPrice() {
-        return tollFee * passengers;
+        return tollFee*getPassengers();
     }
     public String getLicensePlate(){
         return licensePlate;
@@ -27,5 +27,10 @@ public class Vehicle {
     }
     public void newPassengers(int newValue){
         passengers = newValue;
+    }
+    public void printInfo(){
+        System.out.println("License plate: " + licensePlate);
+        System.out.println("Toll fee: " +tollFee);
+        System.out.println("Passengers: " + passengers);
     }
 }
